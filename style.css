@@ -3,6 +3,10 @@ body {
     font-family: 'Allerta',sans-serif;
     margin: 0;
 }
+.background{
+    background-image: url('./images/background.png');
+    background-size: cover;
+}
 .titulo{
     font-family: 'Monserrat',sans-serif;
     font-size: 70px;
@@ -30,12 +34,18 @@ body {
     font-size: 35px;
 }
 .portada{
-    background-image: url('./images/background.png');
     color:white;
     padding: 20px;
+    height: 500px;
+}
+
+.menu a{
+    color:white;
+    text-decoration: none;
 }
 .portada button{
     margin-bottom: 70px;
+
 }
 header{
     position: relative;
@@ -52,6 +62,7 @@ header{
 }
 .logotipo{
     display: inline-block;
+    margin-left: 0;
 }
 .guitarra{
     margin: 10px;
@@ -79,30 +90,105 @@ header{
 .contenedor-guitarra-a{
     padding-left: 20px;
 }
-button{
+.button{
     border-radius: 5px 5px 5px 5px;
-    background-color: #fd324e;
     color: white;
     border: none; 
     padding: 5px;
+    font-size: 20px;
+    background: linear-gradient(to left,#fe344e,#ff7250);
+    cursor: pointer;
 }
 footer{
     background-color: #273b47; 
-    padding:50px;
-    margin-top: 50px;
+    padding: 70px;
+    margin-top: 120px;
 }
+.contacto{
+    display: flex;
+    width: 350px;
+    flex-wrap: wrap;
+}
+
 .contacto strong{
     display: block;
 }
 .contacto a{
     text-decoration: none;
-    display: inline-block;
     color: white;
-    margin: 10px;
-    margin-top: 30px;
+    margin: 20px;
+    margin-right: 0;
 }
 .contacto img{
 display: block;
-position: relative;
-right: -20px;
+width: 200px;
+height: 70px;
+margin:auto; 
+margin: 20px; 
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario{
+    color: white;
+    display: flex;
+    width: 400px;
+}
+.col1{
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+}
+.col2{
+    align-items: flex-start;
+}
+.intereses{
+    margin-top: 10px;
+}
+.intereses label {
+    font-size: 12px;
+    display: inline-block;
+}
+table{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+table tbody{
+    text-align: center;
+}
+th{
+    background-color: #273b47;
+    color: white;
+    padding: 10px;
+}
+td{
+    padding: 20px;
+}
+td,th,table{
+    border: 1px solid  #273b47;
+    border-collapse: collapse;
+}
+.menu li:before{
+content: '°';
+font-size: 20px;
+line-height: 20px;
+color: white;
+}
+h1 span{
+    text-decoration: underline;
+}
+.col2 .button{
+    position: relative;
+    top: 8px;
+}
+input:focus, textarea:focus{
+    background: lightgrey;
 }
